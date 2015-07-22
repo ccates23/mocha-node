@@ -10,7 +10,7 @@ it('truthyness', function () {
     });
   });
 
-describe.only('CLI', function(){
+describe('CLI', function(){
   it('should thank me for downloading', function(done) {
     console.log('childprocess');
     cp.execFile('./app.js',function (err, stdout) {
