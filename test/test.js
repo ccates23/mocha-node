@@ -1,10 +1,26 @@
 var path = require('path');
 var should = require("chai").should();
 var Animal = require(path.join(process.cwd(), '/lib/animal'));
-var cp = require('child_process');
+
+describe('Mocha + Chai', function(){
+  it('truthyness', function(){
+    true.should.be.true;
+    false.should.be.false;
+  })
+})
+
+
+describe('Thanks', function() {
+  var thanks = require(path.join(process.cwd(), '/lib/thanks'));
+
+
+it('should thank me for downloading my app');
+  thanks.should.equal('Thanks for downloading my app');
+
+});
+
 
 //TESTING AN 'ANIMAL' OBJECT
-
 
 describe('animal', function () {
   describe('constructor', function() {
